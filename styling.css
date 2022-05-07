@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Antiga';
+    src: url('Antiga-Regular.eot');
+    src: local('Antiga'), local('Antiga-Regular'),
+        url('Antiga-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Antiga-Regular.woff2') format('woff2'),
+        url('Antiga-Regular.woff') format('woff'),
+        url('Antiga-Regular.ttf') format('truetype');
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 242, 242);
+
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.banner {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(248, 242, 242);
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+
+    font-family: 'Antiga';
+    font-size: 700%;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgba(90, 86, 85, 1) 30%, rgba(90, 86, 85, 0.4) 50%, rgba(90, 86, 85, 1) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: -0.15cm;
+    text-align: center;
+
+
+
+    font-stretch: 400%;
+
+}
+
+.menu {
+
+    width: 100%;
+    height: 15%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)), url(menu.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+
+
+}
+
+.menu ul {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+
+}
+
+.menu li {
+
+    list-style: none;
+    margin: 20px 40px;
+    font-size: 200%;
+    position: relative;
+
+
+
+}
+
+.menu li::after {
+
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.menu li:hover::after {
+
+    width: 100%;
+
+
+}
+
+.listart {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: radial-gradient(rgba(247, 243, 242, 1) 0%, rgb(247, 243, 242, 0.5) 100%);
+    width: 100%;
+    height: 80%;
+
+}
+
+
+.slider {
+    width: 260px;
+    height: 300px;
+    overflow: hidden;
+    margin: 50px auto;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+
+
+}
+
+.slides {
+
+    width: calc(260px*3);
+
+
+
+}
+
+.slide {
+
+    float: left;
+    height: 100%;
+    width: 33.33333333%;
+
+}
+
+.slide img {
+
+    height: 100%;
+    width: 100%;
+}
